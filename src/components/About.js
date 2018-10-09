@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Rainbow from './hoc/Rainbow'
 
 const About = () => {
     return (
@@ -10,4 +11,4 @@ const About = () => {
        )
 }
 
-export default About;
+export default Rainbow(About)
