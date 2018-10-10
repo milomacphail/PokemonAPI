@@ -1,7 +1,11 @@
+//importing react components
+
 import React, { Component } from 'react'
 import axios from 'axios'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
+//bringing in posts with stylings from homepage
 class Home extends Component {
     state = {
     posts: [ ]
@@ -22,13 +26,15 @@ class Home extends Component {
                 return (
                     <div className = "post card" key={post.id}>
                     <div className = "card-content">
+                    <Link to={'/' + post.id}>
                     <span className = "card-title">{post.title}</span>
+                    </Link>
                     <p>{post.body}</p>
                     </div>
                     </div>
             )
             })
-            
+//if no posts exist; show            
             ): (
             <div className="center"> No posts yet!</div>
             );

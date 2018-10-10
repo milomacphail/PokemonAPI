@@ -1,7 +1,9 @@
+//importing react components
 import React from 'react'
 import Navbar from './Navbar'
 import Rainbow from './hoc/Rainbow'
 
+//JSX DOM
 const About = () => {
     return (
        <div className="container">
@@ -11,4 +13,5 @@ const About = () => {
        )
 }
 
+//random coloring for text to DOM (possibly delete)
 export default Rainbow(About)

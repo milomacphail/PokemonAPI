@@ -1,3 +1,5 @@
+//importing react and additional components
+
 import React, { Component } from 'react';
 import Navbar from './components/Navbar'
 import { BrowserRouter, Route } from 'react-router-dom'
@@ -6,6 +8,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Post from './components/Post'
 
+//JSX renders
 
 class App extends Component {
   render() {

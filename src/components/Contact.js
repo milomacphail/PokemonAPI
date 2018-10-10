@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "./Navbar"
 
+
 const Contact = (props) => {
   // setTimeout(() => {
   //    props.history.push("/about")}, 2000);  
